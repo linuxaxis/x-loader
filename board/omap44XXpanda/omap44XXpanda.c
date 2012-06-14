@@ -1,5 +1,5 @@
 /*
- * omap4430panda
+ * omap44XXpanda
  *
  * (C) Copyright 2004-2010 Texas Instruments.  All rights reserved.
  * Texas Instruments, <www.ti.com>

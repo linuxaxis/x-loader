@@ -1,5 +1,5 @@
 /*
- * (C) Copyright 2006 
+ * (C) Copyright 2006
  * Texas Instruments <www.ti.com>
  * Richard Woodruff <r-woodruff2@ti.com>
  * David Anders <x0132446@ti.com>
@@ -29,17 +29,16 @@
 #define __CONFIG_H
 
 /* serial printf facility takes about 3.5K */
-#define CFG_PRINTF 
-//#undef CFG_PRINTF 
+#define CFG_PRINTF
+//#undef CFG_PRINTF
 
 /*
  * High Level Configuration Options
  */
 #define CONFIG_ARMCORTEXA9       1    /* This is an ARM V7 CPU core */
 #define CONFIG_OMAP              1    /* in a TI OMAP core */
-#define CONFIG_OMAP44XX          1    /* which is a 34XX */
-#define CONFIG_OMAP4430          1    /* which is in a 3430 */
-#define CONFIG_4430PANDA         1    /* working with SDP */
+#define CONFIG_OMAP44XX          1    /* which is a 44XX */
+#define CONFIG_44XXPANDA         1    /* working with SDP */
 
 #define CORE_190MHZ		1
 /* Enable the below macro if MMC boot support is required */
@@ -57,7 +56,7 @@
 
 /* uncomment it if you need timer based udelay(). it takes about 250 bytes */
 //#define CFG_UDELAY
- 
+
 /* Clock Defines */
 #define V_OSCK                   19200000  /* Clock output from T2 */
 #define V_SCLK                   V_OSCK
@@ -72,7 +71,7 @@
 #define CFG_NS16550_REG_SIZE     (-4)
 #define CFG_NS16550_CLK          (48000000)
 #define CFG_NS16550_COM3         OMAP44XX_UART3
- 
+
 /*
  * select serial console configuration
  */
@@ -88,9 +87,9 @@
  * Miscellaneous configurable options
  */
 #define CFG_LOADADDR             0x80e80000
-  
+
 #undef	CFG_CLKS_IN_HZ		/* everything, incl board info, in Hz */
-#define CFG_ENV_SIZE		0x100 
+#define CFG_ENV_SIZE		0x100
 /*-----------------------------------------------------------------------
  * Stack sizes
  *
@@ -99,4 +98,3 @@
 #define CONFIG_STACKSIZE         (128*1024) /* regular stack */
 
 #endif /* __CONFIG_H */
-

@@ -175,8 +175,8 @@ omap4430sdp_config :    unconfig
 	echo "/* Automatically generated - do not edit */" >./include/config.h; \
 	echo "#include <configs/omap4430sdp.h>" >>./include/config.h;
 
-omap4430panda_config :    unconfig
-	@./mkconfig $(@:_config=) arm omap4 omap4430panda
+omap44XXpanda_config :    unconfig
+	@./mkconfig $(@:_config=) arm omap4 omap44XXpanda
 
 omap44XXtablet_config :    unconfig
 	@./mkconfig $(@:_config=) arm omap4 omap44XXtablet
